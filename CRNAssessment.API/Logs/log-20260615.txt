@@ -1,0 +1,56 @@
+2026-06-15 14:33:37.209 +05:30 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-15 14:33:38.439 +05:30 [INF] Now listening on: https://localhost:7043
+2026-06-15 14:33:38.445 +05:30 [INF] Now listening on: http://localhost:5076
+2026-06-15 14:33:38.649 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-15 14:33:38.656 +05:30 [INF] Hosting environment: Development
+2026-06-15 14:33:38.659 +05:30 [INF] Content root path: F:\Dot Net Core\CRNAssessment.API\CRNAssessment.API
+2026-06-15 14:33:40.234 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2026-06-15 14:33:42.230 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 2011.3557ms
+2026-06-15 14:33:42.430 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-15 14:33:42.431 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2026-06-15 14:33:42.468 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 38.2903ms
+2026-06-15 14:33:42.919 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 488.2329ms
+2026-06-15 14:33:43.064 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2026-06-15 14:33:43.200 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 136.0472ms
+2026-06-15 14:34:51.531 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Auth/login - application/json 51
+2026-06-15 14:34:51.781 +05:30 [INF] Executing endpoint 'CRNAssessment.API.Controllers.AuthController.Login (CRNAssessment.API)'
+2026-06-15 14:34:51.842 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(CRNAssessment.API.Models.LoginRequest) on controller CRNAssessment.API.Controllers.AuthController (CRNAssessment.API).
+2026-06-15 14:34:52.092 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-06-15 14:34:52.125 +05:30 [INF] Executed action CRNAssessment.API.Controllers.AuthController.Login (CRNAssessment.API) in 261.9918ms
+2026-06-15 14:34:52.166 +05:30 [INF] Executed endpoint 'CRNAssessment.API.Controllers.AuthController.Login (CRNAssessment.API)'
+2026-06-15 14:34:52.167 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Auth/login - 200 null text/plain; charset=utf-8 648.4832ms
+2026-06-15 14:35:33.377 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Products - application/json 289
+2026-06-15 14:35:33.523 +05:30 [INF] Executing endpoint 'CRNAssessment.API.Controllers.ProductsController.Create (CRNAssessment.API)'
+2026-06-15 14:35:33.540 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNAssessment.API.Models.Product) on controller CRNAssessment.API.Controllers.ProductsController (CRNAssessment.API).
+2026-06-15 14:35:34.343 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-06-15 14:35:34.427 +05:30 [INF] Executed action CRNAssessment.API.Controllers.ProductsController.Create (CRNAssessment.API) in 883.3603ms
+2026-06-15 14:35:34.437 +05:30 [INF] Executed endpoint 'CRNAssessment.API.Controllers.ProductsController.Create (CRNAssessment.API)'
+2026-06-15 14:35:34.444 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Products - 400 null application/problem+json; charset=utf-8 1067.4714ms
+2026-06-15 14:37:06.732 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Products - application/json 55
+2026-06-15 14:37:06.807 +05:30 [INF] Executing endpoint 'CRNAssessment.API.Controllers.ProductsController.Create (CRNAssessment.API)'
+2026-06-15 14:37:06.811 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNAssessment.API.Models.Product) on controller CRNAssessment.API.Controllers.ProductsController (CRNAssessment.API).
+2026-06-15 14:37:06.854 +05:30 [INF] Product Created Successfully
+2026-06-15 14:37:11.270 +05:30 [INF] Executed DbCommand (186ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([CreatedBy], [CreatedOn], [ModifiedBy], [ModifiedOn], [ProductName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-06-15 14:37:11.449 +05:30 [INF] Executing OkObjectResult, writing value of type 'CRNAssessment.API.Models.Product'.
+2026-06-15 14:37:11.466 +05:30 [INF] Executed action CRNAssessment.API.Controllers.ProductsController.Create (CRNAssessment.API) in 4648.2209ms
+2026-06-15 14:37:11.475 +05:30 [INF] Executed endpoint 'CRNAssessment.API.Controllers.ProductsController.Create (CRNAssessment.API)'
+2026-06-15 14:37:11.537 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Products - 200 null application/json; charset=utf-8 4805.6082ms
+2026-06-15 14:50:18.432 +05:30 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-15 14:50:19.798 +05:30 [INF] Now listening on: https://localhost:7043
+2026-06-15 14:50:19.801 +05:30 [INF] Now listening on: http://localhost:5076
+2026-06-15 14:50:20.027 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-15 14:50:20.035 +05:30 [INF] Hosting environment: Development
+2026-06-15 14:50:20.044 +05:30 [INF] Content root path: F:\Dot Net Core\CRNAssessment.API\CRNAssessment.API
+2026-06-15 14:50:22.536 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2026-06-15 14:50:23.875 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 1352.196ms
+2026-06-15 14:50:24.050 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2026-06-15 14:50:24.050 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-15 14:50:24.230 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 179.8308ms
+2026-06-15 14:50:24.385 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 336.2637ms
+2026-06-15 14:50:24.565 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2026-06-15 14:50:24.640 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.4364ms
